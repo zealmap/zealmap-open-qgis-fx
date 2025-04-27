@@ -1,6 +1,18 @@
-# abstract
-1. 通过OSGeo4W下载开发环境
-1. 安装vs qt插件(https://marketplace.visualstudio.com/items?itemName=TheQtCompany.QtVisualStudioTools2022), 配置qt环境目录到刚才下载的开发环境中的qt目录
-2. 修改"CMakeUserPresets.json"中的变量信息,主要是vcpkg和qt环境
-3. 生成cmake缓存
-4. 编译
+[中文版](README.zh-CN.md)|[English](README.md)
+
+ZealMap-Open-QGIS-FX is a secondary development GIS platform based on QGIS(https://github.com/qgis/QGIS), providing a quick scaffold for building your own app.
+
+# Features  
+* It is completely open source. You can freely modify the source code.
+* Support plug-in development, The development examples with built-in plugins can be referred to by you.
+* only the basic interface layout is retained to facilitate the quick start of one's own customized projects.
+
+# Example
+![main](screenshots/main.png)
+
+# Setup
+1. Download the development environment through OSGeo4W.
+2. Install the vs qt plugin (https://marketplace.visualstudio.com/items?itemName=TheQtCompany.QtVisualStudioTools2022), and configure the qt environment directory to the qt directory in the development environment just downloaded.
+3. Modify the variable information in "CMakeUserPresets.json", mainly the vcpkg and qt environments.
+4. Generate the cmake cache.
+5. Compile.
