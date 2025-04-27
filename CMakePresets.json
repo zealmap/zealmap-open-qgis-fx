@@ -1,0 +1,31 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "hidden": true,
+      "name": "QGIS-Default",
+      "environment": {
+        "QGIS_INCLUDE_PATH": "$env{QTDIR}/../qgis-ltr/include",
+        "QGIS_LIB_PATH": "$env{QTDIR}/../qgis-ltr/lib",
+        "PATH": "$env{QTDIR}/../../bin;$env{QTDIR}/../qgis-ltr/bin;$env{QTDIR}/bin;$penv{PATH}"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "Qt",
+      "cacheVariables": {
+        "CMAKE_PREFIX_PATH": "$env{QTDIR}"
+      },
+      "vendor": {
+        "qt-project.org/Qt": {
+          "checksum": "wVa86FgEkvdCTVp1/nxvrkaemJc="
+        }
+      }
+    }
+  ],
+  "vendor": {
+    "qt-project.org/Presets": {
+      "checksum": "iordfYdYhCkbfaKvECBlCe1Hi7U="
+    }
+  }
+}

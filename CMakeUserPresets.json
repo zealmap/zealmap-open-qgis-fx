@@ -1,0 +1,109 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "Qt-Debug",
+      "inherits": [
+        "QGIS-Default",
+        "App-Dev",
+        "qgis_ltr_3_34_13_Qt5",
+        "Qt-Default"
+      ],
+      "binaryDir": "${sourceDir}/out/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "CMAKE_CXX_FLAGS": "-DQT_QML_DEBUG"
+      }
+    },
+    {
+      "name": "Qt-Release",
+      "inherits": [
+        "QGIS-Default",
+        "App-Dev",
+        "qgis_ltr_3_34_13_Qt5",
+        "Qt-Default"
+      ],
+      "binaryDir": "${sourceDir}/out/build",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "hidden": true,
+      "name": "App-Dev",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "D:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+      },
+      "toolchainFile": "D:/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+    {
+      "hidden": true,
+      "name": "Qt-Default",
+      "inherits": "OSGeo4W_Qt5_13_12",
+      "vendor": {
+        "qt-project.org/Default": {
+          "checksum": "SfG3NTwgmzfDaUBHGaDvdAas9M8="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "OSGeo4W_Qt5_13_12",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "D:/OSGeo4W/apps/Qt5"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "zAe2rFsz2L6nVcJZxvXex282p3s="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "qgis_ltr_3_34_13_Qt5",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "D:/qgis-ltr-3.34.13-1/OSGeo4W64/apps/Qt5"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "XNrAIBdfupkOylFY1M7Es4teEG4="
+        }
+      }
+    },
+    {
+      "hidden": true,
+      "name": "qt_5_13_2_msvc2019_64",
+      "inherits": "Qt",
+      "environment": {
+        "QTDIR": "D:/qt-dev-x86_64/msvc2019_64"
+      },
+      "architecture": {
+        "strategy": "external",
+        "value": "x64"
+      },
+      "generator": "Ninja",
+      "vendor": {
+        "qt-project.org/Version": {
+          "checksum": "aUHFYjjpQlmusSxqpc6n9g+bTZw="
+        }
+      }
+    }
+  ],
+  "vendor": {
+    "qt-project.org/Presets": {
+      "checksum": "jArpORszZYZBzifxGcyAHcmWDes="
+    }
+  }
+}
